@@ -1,0 +1,27 @@
+{
+  "name": "electron-update-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "lamdaik1412",
+        "repo": "electron-update-example"
+      }
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^26.1.0",
+    "electron-log": "^4.4.8",
+    "electron-updater": "^6.1.4"
+  }
+}
